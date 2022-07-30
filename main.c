@@ -1,25 +1,21 @@
-#include <stdio.h>
-#define MAX 10
-
-typedef char matriz[MAX][MAX];
-
-
-matriz * crearMatriz();
+#include "letras.h"
 
 
 int main() {
+    matriz nueva_matriz;
+
+    crearMatriz(nueva_matriz);
+    dibujarMatriz(nueva_matriz);
+    system("pause");
+    /*int i = 0;
+
+    while (i < 20) {
+        dibujarMatriz(nueva_matriz);
+        Sleep(100);
+        i = i + 1;
+        system("cls");
+    }*/
 
     return 0;
 }
 
-matriz * crearMatriz(matriz nueva_matriz) {
-
-    int i, j;
-
-    for(i = 0; i < MAX; i++) {
-        for(j = 0; j < MAX; j++) {
-
-        }
-    }
-    return * nueva_matriz;
-}
